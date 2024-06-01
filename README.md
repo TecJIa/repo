@@ -168,14 +168,14 @@ nginx -s reload
 ```bash
 curl -a http://localhost/repo/
 ```
-![images2](./images/repo_20.png)
+![images2](./images/repo_20_c.png)
 
 ● Проверяем в браузере:
 
 ```bash
 http://192.168.56.101/repo/
 ```
-![images2](./images/repo_21.png)
+![images2](./images/repo_20.png)
 
 ● Добавим репозиторий в /etc/yum.repos.d:
 ```bash
@@ -187,6 +187,7 @@ gpgcheck=0
 enabled=1
 EOF
 ```
+![images2](./images/repo_21.png)
 ![images2](./images/repo_22.png)
 
 ● Убедимся, что репозиторий подключился и посмотрим, что в нем есть:
